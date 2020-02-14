@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Professeur.importer</title>
+    <link rel="stylesheet" href="../styles/impStyle.css">
+</head>
+<body>
+<div class="cbody">    
+    <div class="block1">
+        <img src="../images/imageProf.png" class="image" alt="photo de prof">
+        <h2 class="someone">Mr.someone</h2>
+        <p class="para"><img src="../images/home1.png" class="imag" alt=""><a href="#">Dashboard</a></p>
+        <p class="paras"><img src="../images/import.png" class="imag" alt=""><a href="#">Import</a></p>
+        <p class="paras"><img src="../images/export.png" class="imag" alt=""><a href="#">Export</a></p>
+    </div>        
+    <div class="block2">
+        <h2 class="title">Importer les notes  selon  le module</h2>
+        <ul>
+            <li> 
+                <select name="semsetre" id="numS">
+                    <option value="" selected ="selected">Annee</option>
+                    <option value="s1">CP1</option>
+                    <option value="s2">CP2</option>
+                    <option value="s2">3GINFO</option>
+                    <option value="s2">4GINFO</option>
+                    <option value="s2">3GTR</option>
+                </select>
+            </li>
+            <li> 
+                <select name="semsetre" id="numS">
+                    <option value="" selected ="selected">Semsetre</option>
+                    <option value="s1">S1</option>
+                    <option value="s2">S2</option>
+                </select>
+            </li>
+            <li> 
+                <select name="module" id="typeModule">
+                    <option value="" selected ="selected">Module</option>
+                    <option value="s1">Algebre</option>
+                    <option value="s2">Analyse</option>
+                    <!-- <option value="s2">autre</option> -->
+                    <!-- <option value="s2">autre</option> -->
+                </select>
+            </li>
+            <li><input type="submit" value="Rechercher"></li>
+        </ul>
+        <div class="block2_2">
+            <div class="eleve B">
+                <h3 class="student">Eleve</h3>
+                <p class="mat">Tazribine Hassan</p>
+            </div>
+            <div class="module A">
+                <h3 class="stu">Note</h3>
+                <input class="stuNote" type="number">
+            </div>
+            <div class="module A D">
+                <h3 class="stu">Remarque</h3>
+                <input class="inputRemarque" type="text">
+            </div>
+            <!-- <div class="moyenne A">
+                <h3 class="stu">Moyenne</h3>
+                <input type="number">
+            </div>
+            <div class="decision A">
+                <h3 class="stu">Decision</h3>
+                <input type="text">
+            </div> -->
+        </div>
+        <button>Enregistrer</button>
+    </div>
+</div>
+<script src="../scripts/impDy.js"></script>
+</body>
+</html>

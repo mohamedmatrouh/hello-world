@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>EspaceEtudiant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+  <link rel="stylesheet" href="src/styles/landing_page.css">
+</head>
+<body>
+<div class="cont">
+  <div class="demo">
+    <div class="login">
+      <div class="login__check"></div> 
+      <!--this is the login check part cool-->
+      <div class="button_box">
+        <!-- button box (student or teacher)-->
+        <div id="btn"></div>
+        <button type="button" class="toggle_btn" onclick="student()">Student</button>
+        <button type="button" class="toggle_btn" onclick="prof()">Proffeseur</button>
+      </div>
+<!--=============================Student login form===============================================-->
+<form action="src/pages/verifyStudent.php" method="POST">    
+<div class="login__form" id="studet">
+        <div class="login__row">
+          <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
+            <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
+          </svg>
+          <input type="text" class="login__input name" placeholder="CNE" id="CNE" name= "studentId"/>
+        </div>
+        <div class="login__row">
+          <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
+            <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
+          </svg>
+          <input type="password" class="login__input pass" placeholder="Password" name="studentPass"/>
+        </div>        
+        <input type="submit" class="login__submit" value="Sign in">
+      </div></form>  
+<!--=============================Teacher login form===============================================-->
+<form action="src/php/verifyProf.php" method="GET">    
+  <div class="login__form" id="profe">
+        <div class="login__row">
+          <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
+            <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
+          </svg>
+          <input type="text" class="login__input name" placeholder="profid" name="professeurId"/>
+        </div>
+        <div class="login__row">
+          <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
+            <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
+          </svg>
+          <input type="password" class="login__input pass" placeholder="Password" name="professeurPass"/>
+        </div>
+        <input type="submit" class="login__submit" value="Sign in">
+      </div>
+      </form>
+    </div>
+      
+  </div>
+</div>
+<script src="src/scripts/landing_page.js"> </script>
+</body>
+</html>

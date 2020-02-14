@@ -1,0 +1,122 @@
+body{
+	width: 90%;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 20px;
+	min-width: 458px;
+}
+
+#container{
+	display: flex;
+	width: 100%;
+}
+#student_informations{
+	width: 22%;
+	margin-top: 90px; 
+}
+#student_informations img{
+	border-radius: 50%;
+}
+#CNE{
+	color: #808080;
+}
+#setting{
+	position: relative;
+	bottom: -100px;
+	color: #333333;
+	text-decoration-line: none;
+	font-size: 24px;
+}
+
+#modifications{
+	justify-content: center;
+	line-height: 50px;
+	margin-top: 50px;
+	width: 60%;
+	margin-left: 10%;
+	border: solid 10px #c4c4c4;
+	margin-top: 50px;
+	margin-left: 40px;
+	padding: 20px;
+}
+table{
+	margin-left: 15%;
+}
+#modifications p{
+	background-color: #13b4fb;
+	border-radius: 20px;
+	padding: 0.5%;
+	text-align: center;
+	width: 20%;
+	font-weight: bold;
+	color: white;
+	margin-left: 35%;
+	margin-right: 35%;
+}
+hr{
+	background-color: #13b4fb;
+	height: 1px;
+}
+dl{
+	font-weight: bold;
+}
+table input{
+	border: solid 1px #13b4fb;
+	border-radius: 20px;
+	outline: none;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#save_img{
+	display: flex;
+	justify-content: space-around;
+}
+#save_img input{
+	margin-top: 4%;
+}
+#enregistrer{
+	width: 100px;
+	height: 40px;
+	border-radius: 10px;
+	outline: none;
+	padding: 8px;
+	background-color: #13b4fb;
+	color: white;
+	font-weight: bold;
+	border: solid 1px #13b4fb;
+	cursor: pointer;
+}
+
+@media(max-width: 1005px){
+	#container{
+		display: block;
+		width: 100%;
+	}
+	#student_informations{
+		width: 100%;
+		display: flex; 
+		justify-content: space-between;
+	}
+	#modifications{
+		width: 100%;
+		margin:20px 0px 0px 0px;
+		height: 440px;
+	}
+	body{
+		font-size: 14px;
+		margin: 0px 0px 0px;
+	}
+	#setting{
+		bottom: -50px;
+	}
+	#notes_table td{
+		height: 50px;
+	}
+}
+@media(max-width: 525px){
+	table{
+		margin-left: 1%;
+	}
+}
